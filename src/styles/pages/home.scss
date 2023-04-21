@@ -1,0 +1,48 @@
+$myColor: #18214D;
+
+
+.first-text{
+    color: $myColor;
+    text-align: center;
+    margin: auto;
+    margin-top: 64px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 72px;
+    width: 540px;
+    height: 160px;
+    line-height: 80px;
+}
+
+.second-text{
+    width: 445px;
+    text-align: center;
+    margin: auto auto 64px auto;
+    color: #3E4462;
+    font-size: 20px;
+    height: 88px;
+    line-height: 28px;
+    font-weight: 400px;
+    font-style: normal;
+}
+
+p{
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #3E4462;
+    margin-bottom: 24px;
+}
+
+.input-button{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 2rem;
+    margin-top: 32px;
+    justify-content: center;
+}
