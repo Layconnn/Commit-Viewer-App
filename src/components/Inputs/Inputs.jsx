@@ -1,10 +1,11 @@
 import React from 'react'
 
 function Inputs(props) {
+  
+
   return (
     <>
-        
-        <input className='first-input' placeholder={props.placeholder} type={props.type} />
+        <input onChange={props.onChange} type="search" className={props.className} placeholder={props.placeholder}  />
     </>
   )
 }

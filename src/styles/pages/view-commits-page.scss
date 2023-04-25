@@ -2,21 +2,59 @@
 
 $myColor: #29335C;
 
-h1{
+.commit-head{
+    display: flex;
+    background-color: #EFF2F6;
+    padding: 40px 0 40px 40px;
+}
+h2{
+    margin-top: 15px;
+    color: $myColor;
+    padding-left: 145px;
+    font-size: 28px;
+    font-weight: 700px;
+    font-family: Inter, sans-serif;
+}
+.form{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    padding-left: 32px;
+}
+.head-input{
+    padding-right: 50px;
+    font-family: Inter, sans-serif;
+    width: 666px;
+    color: $myColor;
+    height: 58px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 8px;
+    background-color: #DFE4EA;
+    margin-bottom: 24px;
+}
+
+h3{
     font-size: 36px;
     font-weight: 600;
     text-align: center;
     color: $myColor;
     font-family: Inter, sans-serif;
 }
+.profiles{
+    display: flex;
+    flex-direction: column;
+}
 .update-container{
-    display: inline-block;
-    margin: auto;
+    display: flex;
+    justify-content: space-around;
 }
 .profile-container{
     width: 60px;
     height: 60px;
     background-color: #C4C4C4;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 h6{
@@ -27,8 +65,11 @@ h6{
     margin-left: 319px;
     color: $myColor;
     font-size: 20px;
+    padding-top: 20px;
 }
 .person-name{
+    text-align: center;
     font-size: 22px;
     color: $myColor;
+    margin-top: 0;
 }

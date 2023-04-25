@@ -4,13 +4,15 @@
 
 //head
 @import './components/Header/home-header.scss';
-@import './components/Header/loading-header.scss';
 
 //inputs
 @import './components/Inputs/inputs.scss';
 
 //pages
 @import './pages/home.scss';
+@import './pages/loading-page.scss';
+@import './pages/view-commits-page.scss';
+@import './pages/no-page.scss';
 
 //app
-@import './app/app.scss'
+@import './app/app.scss';

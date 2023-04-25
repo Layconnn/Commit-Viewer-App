@@ -2,7 +2,42 @@
 
 $myColor: #29335C;
 
+.loading-head{
+    display: flex;
+    margin: auto;
+    background-color: #EFF2F6;
+    padding: 40px 0 40px 40px;
+}
+h2{
+    margin-top: 15px;
+    width: 198px;
+    color: $myColor;
+    padding-left: 145px;
+    font-size: 28px;
+    font-weight: 700px;
+    font-family: Inter, sans-serif;
+}
+.inline-form{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    padding-left: 32px;
+}
+.top-input{
+    padding-right: 50px;
+    font-family: Inter, sans-serif;
+    color: $myColor;
+    width: 666px;
+    height: 58px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 8px;
+    background-color: #DFE4EA;
+    margin-bottom: 24px;
+}
+
 .microsoft{
+    text-align: center;
     font-size: 36px;
     font-weight: 600;
     color: $myColor;

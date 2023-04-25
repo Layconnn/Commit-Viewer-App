@@ -1,9 +1,6 @@
 $myColor: #18214D;
 
-.body{
-    width: 100%;
-    margin: 0;
-}
+
 
 .first-text{
     color: $myColor;
@@ -30,7 +27,7 @@ $myColor: #18214D;
     font-style: normal;
 }
 
-p{
+.option{
     height: 20px;
     text-align: center;
     font-size: 14px;
@@ -94,7 +91,17 @@ p{
     border-radius: 8px;
     padding: 8px 16px;
 }
-
+.search-input{
+    padding-right: 50px;
+    font-family: Inter, sans-serif;
+    width: 694px;
+    height: 58px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 8px;
+    background-color: #DFE4EA;
+    margin-bottom: 24px;
+}
 @media (max-width: 460px){
     .first-text{
         margin: auto;
@@ -115,29 +122,31 @@ p{
         flex-direction: column;
         
     }
-    p{
+    .option{
         margin-top: 20px;
         margin: auto;
         width: 180px;
     }
     .initial-button{
         margin: auto;
-        width: 140px;
         padding: 0;
     }
     .second-button{
         margin: auto;
-        width: 163px;
         padding: 0;
     }
     .third-button{
         margin: auto;
-        width: 156px;
         padding: 0;
     }
     .fourth-button{
         margin: auto;
-        width: 190px;
         padding: 0;
+    }
+    .search-input{
+    width: 396px;
+    height: 58px;
+    margin: auto;
+    margin-top: 20px;
     }
 }

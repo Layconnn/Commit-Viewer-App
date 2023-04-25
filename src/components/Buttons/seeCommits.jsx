@@ -3,7 +3,7 @@ import React from 'react'
 function SeeCommits(props) {
   return (
     <>
-        <button className='first-button'>{props.text}</button>
+        <button type='search' className='first-button'>{props.text}</button>
     </>
   )
 }
