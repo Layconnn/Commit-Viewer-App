@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Inputs(props) {
+function Input(props) {
   
 
   return (
@@ -10,4 +10,4 @@ function Inputs(props) {
   )
 }
 
-export default Inputs
+export default Input

@@ -2,7 +2,7 @@ import React from 'react'
 import HomeHeader from '../components/Header/homeHeader'
 import CommitsButton from '../components/Buttons/commitsButton'
 import SeeCommits from '../components/Buttons/seeCommits'
-import Inputs from '../components/Inputs/inputs'
+import Input from '../components/Inputs/input'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -25,7 +25,7 @@ function Home() {
           <p className='second-text'>Explore open source projects from GitHub, and read their commit history to see the story of how they were built.</p>
         </div>
         <div className='input-button'>
-            <Inputs onChange={handleChange} className="search-input" placeholder="Eg. facebook/react" />
+            <Input onChange={handleChange} className="search-input" placeholder="Eg. facebook/react" />
             <SeeCommits text="See Commits🧨" />
         </div>
         <p className='option'>Or pick one of these suggested repos</p>

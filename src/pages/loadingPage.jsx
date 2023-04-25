@@ -1,5 +1,5 @@
 import React from 'react'
-import Inputs from '../components/Inputs/inputs'
+import Input from '../components/Inputs/input'
 import SeeCommits from '../components/Buttons/seeCommits'
 import { useState } from 'react'
 
@@ -16,7 +16,7 @@ function LoadingPage() {
      <div className='loading-head'>
             <h2>CommitViewer</h2>
             <div className='inline-form'>
-              <Inputs onChange={handleChange} className="top-input" placeholder="microsoft/vscode" />
+              <Input onChange={handleChange} className="top-input" placeholder="microsoft/vscode" />
               <SeeCommits text="See Commits🧨"/>
             </div>
       </div>
