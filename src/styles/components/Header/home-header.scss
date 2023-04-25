@@ -6,18 +6,17 @@ $myColor: #18214D;
 .layout{
     display: flex;
     margin-top: 60px;
-    padding-right: 40px;
 }
 
 .info{
     display: flex;
     margin-left: 719px;
+    padding: 40px 145px 40px;
 }
 
 .app-name{
     font-family: Inter, sans-serif;
     height: 34px;
-    padding-left: 200px;
     font-weight: 700;
     font-size: 28px;
     color: $myColor;
