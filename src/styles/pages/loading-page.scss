@@ -4,27 +4,23 @@ $myColor: #29335C;
 
 .loading-head{
     display: flex;
-    margin: auto;
     background-color: #EFF2F6;
-    padding: 40px 0 40px 40px;
+    padding: 40px 145px 40px;
 }
 h2{
     margin-top: 15px;
     width: 198px;
     color: $myColor;
-    padding-left: 145px;
     font-size: 28px;
     font-weight: 700px;
     font-family: Inter, sans-serif;
 }
 .inline-form{
     display: flex;
-    gap: 1rem;
-    flex-direction: row;
+    gap: 2rem;
     padding-left: 32px;
 }
 .top-input{
-    padding-right: 50px;
     font-family: Inter, sans-serif;
     color: $myColor;
     width: 666px;

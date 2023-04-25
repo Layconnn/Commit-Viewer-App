@@ -4,7 +4,6 @@ $myColor: #29335C;
 
 .commit-head{
     display: flex;
-    justify-content: space-around;
     background-color: #EFF2F6;
     padding: 40px 145px 40px;
 }
@@ -16,11 +15,10 @@ h2{
 }
 .form{
     display: flex;
+    padding-left: 32px;
     gap: 2rem;
-    flex-direction: row;
 }
 .head-input{
-    padding-left: 32px;
     font-family: Inter, sans-serif;
     width: 666px;
     color: $myColor;
