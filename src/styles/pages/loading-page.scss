@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+$myColor: #29335C;
+
+.microsoft{
+    font-size: 36px;
+    font-weight: 600;
+    color: $myColor;
+    font-family: Inter, sans-serif;
+}
+.action{
+    color: $myColor;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+}

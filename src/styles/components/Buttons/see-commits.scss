@@ -9,4 +9,9 @@
     border-radius: 8px;
     background-color: #F3663F;
     color: white;
+    @media (max-width: 460px){
+        width: 396px;
+        height: 58px;
+        margin: auto;
+    }
 }

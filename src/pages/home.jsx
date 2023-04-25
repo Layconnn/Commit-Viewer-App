@@ -19,10 +19,10 @@ function Home() {
         </div>
         <p>Or pick one of these suggested repos</p>
         <div className='buttons'>
-          <CommitsButton text="django/django" />
-          <CommitsButton text="microsoft/vscode" />
-          <CommitsButton text="jezen/is-thirteen" />
-          <CommitsButton text="benawad/dogehouse" />
+          <CommitsButton className="initial-button" text="django/django" />
+          <CommitsButton className="second-button" text="microsoft/vscode" />
+          <CommitsButton className="third-button" text="jezen/is-thirteen" />
+          <CommitsButton className="fourth-button" text="benawad/dogehouse" />
         </div>
       </div>
     </>

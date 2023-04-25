@@ -2,9 +2,10 @@
 
 $myColor: #18214D;
 
+
 .layout{
     display: flex;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .info{
@@ -34,4 +35,17 @@ $myColor: #18214D;
     margin-left: 80px;
     font-weight: 400;
     font-size: 20px;
+}
+@media (max-width: 460px){
+    .layout{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .app-name{
+        margin: auto;
+    }
+    .info{
+        margin-top: 16px;
+        margin: auto;
+    }
 }
