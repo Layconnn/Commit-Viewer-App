@@ -9,7 +9,7 @@ function App() {
 
   const createApiCall = async() => {
     try{
-      const response = await api.get('/info')
+      const response = await api.get('/')
       console.log(response.data)
       setInfo(response.data);
     }
