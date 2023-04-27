@@ -18,7 +18,7 @@ function ViewCommitsPage() {
             <h2>CommitViewer</h2>
             <div className='form'>
               <Input onChange={handleChange} className="head-input" placeholder="microsoft/vscode" />
-              <SeeCommits text="See Commits🧨"/>
+              <SeeCommits text="See Commits🚀"/>
             </div>
         </div>
         <div>

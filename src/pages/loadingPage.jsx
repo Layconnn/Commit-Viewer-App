@@ -17,7 +17,7 @@ function LoadingPage() {
             <h2>CommitViewer</h2>
             <div className='inline-form'>
               <Input onChange={handleChange} className="top-input" placeholder="microsoft/vscode" />
-              <SeeCommits text="See Commits🧨"/>
+              <SeeCommits text="See Commits🚀"/>
             </div>
       </div>
       <div>

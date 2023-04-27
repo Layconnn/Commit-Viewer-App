@@ -26,7 +26,7 @@ function Home() {
         </div>
         <div className='input-button'>
             <Input onChange={handleChange} className="search-input" placeholder="Eg. facebook/react" />
-            <SeeCommits text="See Commits🧨" />
+            <SeeCommits text="See Commits🚀" />
         </div>
         <p className='option'>Or pick one of these suggested repos</p>
         <div className='buttons'>

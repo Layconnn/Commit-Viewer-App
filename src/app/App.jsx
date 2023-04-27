@@ -11,7 +11,7 @@ function App() {
   const createApiCall = async() => {
     setIsLoading(true)
     try{
-      const response = await api.get('/info')
+      const response = await api.get('/')
       console.log(response.data)
       setInfo(response.data);
     }
@@ -35,12 +35,12 @@ function App() {
       {
         info.length > 0 
         ?
-        info.map(() => {
+        info.map((data) => {
           return(
             <div key={id}>
-              <h4>{}</h4>
-              <p>{}</p>
-              <p>{}</p>
+              <h4>{data.node_id}</h4>
+              <p>{data.name}</p>
+              <p>{data.full_name}</p>
             </div>
           )
         })

@@ -7,7 +7,7 @@
     font-size: 20px;
     font-weight: 400;
     border-radius: 8px;
-    background-color: #DFE4EA;
+    background-color: white;
     margin-bottom: 24px;
     @media (max-width: 460px){
     width: 396px;
@@ -15,4 +15,10 @@
     margin: auto;
     margin-top: 20px;
     }
+}
+.icon{
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 20px;
+    color: #18214D;
 }
