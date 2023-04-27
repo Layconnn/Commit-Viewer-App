@@ -40,8 +40,8 @@ h3{
     font-family: Inter, sans-serif;
 }
 .profiles{
-    display: flex;
-    flex-direction: column;
+    width: 160px;
+    text-align: center;
 }
 .update-container{
     display: flex;
@@ -52,6 +52,7 @@ h3{
     height: 60px;
     background-color: #C4C4C4;
     border-radius: 50%;
+    margin: auto;
     margin-bottom: 10px;
 }
 
@@ -66,7 +67,6 @@ h6{
     padding-top: 20px;
 }
 .person-name{
-    text-align: center;
     font-size: 22px;
     color: $myColor;
     margin-top: 0;

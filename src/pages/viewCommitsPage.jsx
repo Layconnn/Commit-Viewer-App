@@ -26,31 +26,31 @@ function ViewCommitsPage() {
             <div className='update-container'>
                 <div className='profiles'>
                     <div className='profile-container'></div>
-                    <h6 className='person-name'>gearson</h6>
+                    <h6 className='person-name'>geaeron</h6>
                 </div>
                   <h6>Log all errors to console.error by default (#21130)</h6>
                   <p className='date'>23:30 28/04/2021</p>
             </div>
             <div className='update-container'>
-                <div>
+                <div className='profiles'>
                     <div className='profile-container'></div>
-                    <h6 className='person-name'>gearson</h6>
+                    <h6 className='person-name'>geaeron</h6>
                 </div>
                   <h6>Log all errors to console.error by default (#21130)</h6>
                   <p className='date'>23:30 28/04/2021</p>
             </div>
             <div className='update-container'>
-                <div>
+                <div className='profiles'>
                     <div className='profile-container'></div>
-                    <h6 className='person-name'>gearson</h6>
+                    <h6 className='person-name'>geaeron</h6>
                 </div>
                   <h6>Log all errors to console.error by default (#21130)</h6>
                   <p className='date'>23:30 28/04/2021</p>
             </div>
             <div className='update-container'>
-                <div>
+                <div className='profiles'>
                     <div className='profile-container'></div>
-                    <h6 className='person-name'>gearson</h6>
+                    <h6 className='person-name'>geaeron</h6>
                 </div>
                   <h6>Log all errors to console.error by default (#21130)</h6>
                   <p className='date'>23:30 28/04/2021</p>
