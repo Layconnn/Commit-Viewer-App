@@ -11,7 +11,7 @@ function App() {
   const createApiCall = async() => {
     setIsLoading(true)
     try{
-      const response = await api.get('/')
+      const response = await api.get('/repos')
       console.log(response.data)
       setInfo(response.data);
     }
@@ -33,12 +33,14 @@ function App() {
       <Router />
       {isLoading && <h5>Loading Repos</h5> }
       {
+        !isLoading
+          &&
         info.length > 0 
         ?
         info.map((data) => {
           return(
-            <div key={id}>
-              <h4>{data.node_id}</h4>
+            <div key={data.id}>
+              <p>{data.node_id}</p>
               <p>{data.name}</p>
               <p>{data.full_name}</p>
             </div>
