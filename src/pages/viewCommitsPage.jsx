@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Input from '../components/Inputs/input'
 import SeeCommits from '../components/Buttons/seeCommits'
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
 function ViewCommitsPage() {
 
   const [ commit, setCommit ] = useState('')
+  const [ commits, setCommits ] = useState([])
+  
+  const location = useLocation();
 
   const handleChange = (e) => {
     setCommit(e.target.value)
   }
+
+  useEffect(() => {
+    setCommits(location.state.commits)
+  }, [])
 
 
   return (
@@ -22,39 +30,19 @@ function ViewCommitsPage() {
             </div>
         </div>
         <div>
-            <h3>microsoft/vscode</h3>
-            <div className='update-container'>
-                <div className='profiles'>
-                    <div className='profile-container'></div>
-                    <h6 className='person-name'>geaeron</h6>
+          <h3>microsoft/vscode</h3>
+            {commits.map((commit, key) => {
+              return <>
+                <div className='update-container' key={key}>
+                    <div className='profiles'>
+                        <div className='profile-container'></div>
+                        <h5 className='person-name'>{commit.commit.author.name}</h5>
+                    </div>
+                    <h6>{commit.commit.message}</h6>
+                    <p className='date'>{commit.committer.date}</p>
                 </div>
-                  <h6>Log all errors to console.error by default (#21130)</h6>
-                  <p className='date'>23:30 28/04/2021</p>
-            </div>
-            <div className='update-container'>
-                <div className='profiles'>
-                    <div className='profile-container'></div>
-                    <h6 className='person-name'>geaeron</h6>
-                </div>
-                  <h6>Log all errors to console.error by default (#21130)</h6>
-                  <p className='date'>23:30 28/04/2021</p>
-            </div>
-            <div className='update-container'>
-                <div className='profiles'>
-                    <div className='profile-container'></div>
-                    <h6 className='person-name'>geaeron</h6>
-                </div>
-                  <h6>Log all errors to console.error by default (#21130)</h6>
-                  <p className='date'>23:30 28/04/2021</p>
-            </div>
-            <div className='update-container'>
-                <div className='profiles'>
-                    <div className='profile-container'></div>
-                    <h6 className='person-name'>geaeron</h6>
-                </div>
-                  <h6>Log all errors to console.error by default (#21130)</h6>
-                  <p className='date'>23:30 28/04/2021</p>
-            </div>
+                </>
+            })}
         </div>
     </>
   )

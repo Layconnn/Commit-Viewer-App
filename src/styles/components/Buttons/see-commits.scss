@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
-.first-button{
+.search-btn{
     font-family: Inter, sans-serif;
     width: 210px;
     height: 58px;
@@ -9,7 +9,11 @@
     border-color: inherit;
     border-radius: 8px;
     background-color: #F3663F;
+    cursor: pointer;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @media (max-width: 460px){
         width: 396px;
         height: 58px;

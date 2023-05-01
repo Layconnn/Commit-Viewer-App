@@ -11,7 +11,7 @@ function Router() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path="loading" element={<LoadingPage />} />
-                <Route path="view Commits" element={<ViewCommitsPage />} />
+                <Route path="view-commits" element={<ViewCommitsPage />} />
                 <Route path="*" element={<NoPage />} />
             </Routes>
           </BrowserRouter>

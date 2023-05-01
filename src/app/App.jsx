@@ -11,7 +11,7 @@ function App() {
   const createApiCall = async() => {
     setIsLoading(true)
     try{
-      const response = await api.get('/repos')
+      const response = await api.get('repositories')
       console.log(response.data)
       setInfo(response.data);
     }
@@ -31,7 +31,7 @@ function App() {
   return (
     <>
       <Router />
-      {isLoading && <h5>Loading Repos</h5> }
+     {/* {isLoading && <h5>Loading Repos</h5> }
       {
         !isLoading
           &&
@@ -49,6 +49,7 @@ function App() {
         :
         <h5>No data Avaialable</h5>
       }
+      */}
     </>
   )
 }
