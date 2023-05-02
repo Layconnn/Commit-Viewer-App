@@ -5,20 +5,19 @@ $myColor: #18214D;
 
 .layout{
     display: flex;
-    padding: 40px 145px 40px;
+    padding: 40px 145px 0;
     justify-content: center;
 }
 
 .info{
     display: flex;
     padding-left: 719px;
-    padding-top: 0;
+    margin-top: -40px;
 }
 
 .app-name{
     font-family: Inter, sans-serif;
     height: 34px;
-    padding-top: 40px;
     font-weight: 700;
     font-size: 28px;
     color: $myColor;
