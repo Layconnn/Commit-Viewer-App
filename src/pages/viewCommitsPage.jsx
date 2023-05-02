@@ -1,21 +1,15 @@
-import React, { useEffect } from 'react'
-import Input from '../components/Inputs/input'
-import SeeCommits from '../components/Buttons/seeCommits'
-import { useState } from 'react'
+import { React, useState, useEffect } from 'react'
+import SearchCommitInputs from '../components/searchCommitInputs'
 import { useLocation } from 'react-router-dom'
 
-function ViewCommitsPage() {
 
-  const [ commit, setCommit ] = useState('')
+function ViewCommitsPage() {
   const [ commits, setCommits ] = useState([])
+  
   
   const location = useLocation();
 
-  const handleChange = (e) => {
-    setCommit(e.target.value)
-  }
-
-  useEffect(() => {
+  useEffect ( () =>{
     setCommits(location.state.commits)
   }, [])
 
@@ -24,10 +18,7 @@ function ViewCommitsPage() {
     <>
         <div className='commit-head'>
             <h2>CommitViewer</h2>
-            <div className='form'>
-              <Input onChange={handleChange} className="head-input" placeholder="microsoft/vscode" />
-              <SeeCommits text="See Commits🚀"/>
-            </div>
+            <SearchCommitInputs /> 
         </div>
         <div>
           <h3>microsoft/vscode</h3>

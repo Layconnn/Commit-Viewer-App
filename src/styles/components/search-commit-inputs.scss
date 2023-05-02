@@ -1,0 +1,19 @@
+.form{
+    display: flex;
+    padding-left: 32px;
+    justify-content: center;
+    gap: 2rem;
+}
+.search-input{
+    padding-left: 40px;
+    font-family: Inter, sans-serif;
+    width: 694px;
+    height: 58px;
+    border: 1px solid #DFE4EA;
+    outline: none;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 8px;
+    background-color: #DFE4EA;
+    margin-bottom: 24px;
+}

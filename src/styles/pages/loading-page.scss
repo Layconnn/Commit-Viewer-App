@@ -27,7 +27,7 @@ h2{
     padding-left: 40px;
     height: 58px;
     font-size: 20px;
-    border: 1px solid #DFE4EA;
+    border-color: inherit;
     outline: none;
     font-weight: 400;
     border-radius: 8px;
@@ -38,6 +38,7 @@ h2{
 .microsoft{
     text-align: center;
     font-size: 36px;
+    padding-top: 30px;
     font-weight: 600;
     color: $myColor;
     font-family: Inter, sans-serif;
@@ -45,5 +46,29 @@ h2{
 .action{
     color: $myColor;
     font-size: 20px;
+    padding-top: 10px;
     font-family: Inter, sans-serif;
+}
+.profiles{
+    width: 160px;
+    text-align: center;
+    padding-left: 100px;
+}
+.update-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.profile-container{
+    width: 60px;
+    height: 60px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.person-name{
+    font-size: 22px;
+    color: $myColor;
+    margin-top: 0;
 }

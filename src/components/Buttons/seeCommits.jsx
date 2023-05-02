@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import api from '../../api/api';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function SeeCommits(props) {
   const {repo} = props;
