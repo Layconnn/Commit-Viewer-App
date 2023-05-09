@@ -1,2 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
+
+.main-button{
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+    color: white;
+    border: none;
+    background-color: #29335C;
+}

@@ -4,6 +4,9 @@ $myColor: #29335C;
 
 .commit-head{
     display: flex;
+    justify-content: center;
+    align-items: centers;
+    gap: 4rem;
     background-color: #EFF2F6;
     padding: 40px 145px 40px;
 }
@@ -12,6 +15,10 @@ h2{
     font-size: 28px;
     font-weight: 700px;
     font-family: Inter, sans-serif;
+}
+.input-searching{
+    display: flex;
+    gap: 1.5rem;
 }
 h3{
     font-size: 36px;
@@ -27,15 +34,34 @@ h3{
     text-align: center;
     padding-left: 100px;
 }
+.search-commit{
+    padding-left: 40px;
+    font-family: Inter, sans-serif;
+    width: 694px;
+    height: 58px;
+    border: 1px solid #DFE4EA;
+    outline: none;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 8px;
+    background-color: #DFE4EA;
+    margin-bottom: 24px;
+}
 .update-container{
     display: flex;
+    margin: auto;
+    width: 1150px;
+    padding: 30px 0; 
+    border-radius: 20px;
+    border: 2px solid #29335C;
+    box-shadow: 20px 20px 10px grey;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 60px;
 }
 .profile-container{
     width: 60px;
     height: 60px;
-    background-color: #C4C4C4;
     border-radius: 50%;
     margin: auto;
     margin-bottom: 10px;
@@ -48,13 +74,14 @@ h6{
     color: $myColor;
     font-size: 20px;
     max-width: 900px;
-    padding-left: 100px;
+    padding-top: 30px;
+    padding-left: 150px;
 }
 .date{
     margin-left: 319px;
     color: $myColor;
     font-size: 20px;
-    padding-top: 20px;
+    padding-right: 50px;
 }
 .person-name{
     font-size: 22px;

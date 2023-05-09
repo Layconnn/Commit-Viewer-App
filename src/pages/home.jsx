@@ -1,12 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HomeHeader from '../components/Header/homeHeader'
+import Api from '../api/api';
 import CommitsButton from '../components/Buttons/commitsButton'
-import SearchCommitInputs from '../components/searchCommitInputs'
-import { useNavigate } from 'react-router-dom'
+import SeeCommits from '../components/Buttons/seeCommits';
+import Input from '../components/Inputs/input';
+import { useEffect } from 'react';
 
 function Home() {
+  const [commits, setCommits] = useState([]);
+  const [ repo, setRepo ] = useState('')
+  
+  
+  const handleChange = (e) => {
+    setRepo(e.target.value)
+  }
 
-  const router = useNavigate()
+ 
+
+  const handleSearchCommits = async() => {
+    try{
+      const response = await Api.get('https://api.github.com/search/repositories?q=Q/language:javacsript&sort=stars&per_page=4')
+      console.log(response.data)
+      setCommits(response.data.items);
+    }
+    catch(err){
+      console.error(err)
+    }
+  }
+
+  useEffect(() => {
+    handleSearchCommits();
+  }, [])
+
+  
 
   return (
     <>
@@ -16,14 +42,25 @@ function Home() {
           <h1 className='first-text'>Discover the world of code</h1>
           <p className='second-text'>Explore open source projects from GitHub, and read their commit history to see the story of how they were built.</p>
         </div>
-        <SearchCommitInputs />
-        <p className='option'>Or pick one of these suggested repos</p>
-        <div className='buttons'>
-          <CommitsButton className="initial-button" text="django/django" />
-          <CommitsButton onClick={() => router('/view-commits')} className="second-button" text="microsoft/vscode" />
-          <CommitsButton onClick={() => router('/loading')} className="third-button" text="jezen/is-thirteen" />
-          <CommitsButton className="fourth-button" text="benawad/dogehouse" />
+        <div className='input-search'>
+          <Input onChange={handleChange} className="search-commit" placeholder="Eg. facebook/react"/>
+          <SeeCommits text="See Commits🚀" repo={repo} />
         </div>
+        <p className='option'>or pick one of the suggested repos</p>
+        <span className='mapped-btns' >
+        {
+          commits.length > 0
+          ?
+        commits.map((data) => (
+          
+            <CommitsButton className="initial-button" key={data.id} text={data.name} repo={data.full_name} />
+          
+        ))
+        :
+        ''
+        }
+        </span>
+        
       </div>
     </>
   )

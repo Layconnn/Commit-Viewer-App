@@ -5,7 +5,7 @@ import Router from "../router/router";
 import api from "../api/api";
 
 function App() {
-  const [info, setInfo] = useState([])
+  {/*const [info, setInfo] = useState([])
   const [isLoading, setIsLoading] = useState(false)
 
   const createApiCall = async() => {
@@ -26,12 +26,12 @@ function App() {
   useEffect(() => {
     createApiCall();
   }, [])
-
+*/}
 
   return (
     <>
       <Router />
-     {/* {isLoading && <h5>Loading Repos</h5> }
+     {/* { isLoading && <h5>Loading Repos</h5> }
       {
         !isLoading
           &&

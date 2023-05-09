@@ -26,7 +26,36 @@ $myColor: #18214D;
     font-weight: 400;
     font-style: normal;
 }
-
+h5{
+    text-align: center;
+}
+.search-commit{
+    padding-left: 40px;
+    font-family: Inter, sans-serif;
+    width: 694px;
+    height: 58px;
+    border: 1px solid #DFE4EA;
+    outline: none;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 8px;
+    background-color: #DFE4EA;
+    margin-bottom: 24px;
+}
+.mapped-btns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+.input-search{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
 .option{
     height: 20px;
     text-align: center;
@@ -49,52 +78,17 @@ $myColor: #18214D;
 }
 
 .initial-button{
+    cursor: pointer;
     font-family: Inter, sans-serif;
-    height: 35px;
     font-size: 16px;
     text-align: center;
     color: white;
-    border: 1px solid white;
+    border: none;
     background-color: #29335C;
     border-radius: 8px;
     padding: 8px 16px;
 }
 
-.second-button{
-    font-family: Inter, sans-serif;
-    height: 35px;
-    font-size: 16px;
-    text-align: center;
-    border: 1px solid white;
-    color: white;
-    background-color: #29335C;
-    border-radius: 8px;
-    padding: 8px 16px;
-}
-
-.third-button{
-    font-family: Inter, sans-serif;
-    height: 35px;
-    text-align: center;
-    font-size: 16px;
-    border: 1px solid white;
-    color: white;
-    background-color: #29335C;
-    border-radius: 8px;
-    padding: 8px 16px;
-}
-
-.fourth-button{
-    font-family: Inter, sans-serif;
-    height: 35px;
-    font-size: 16px;
-    color: white;
-    border: 1px solid white;
-    background-color: #29335C;
-    border-radius: 8px;
-    padding: 8px 16px;
-    padding-bottom: 8px;
-}
 @media (max-width: 460px){
     .first-text{
         margin: auto;
