@@ -30,7 +30,7 @@ function Home() {
 
   useEffect(() => {
     handleSearchCommits();
-  }, [commits])
+  }, [])
 
   
 

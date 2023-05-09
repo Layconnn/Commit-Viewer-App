@@ -1,10 +1,10 @@
 import axios from "axios";
 
  const Api =  axios.create({
-    baseURL: 'https://api.github.com/',
+    baseURL: import.meta.env.VITE_APP_API_URL,
     auth: {
-        username: 'Layconnn',
-        password: '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'
+        username: import.meta.env.VITE_APP_API_USERNAME,
+        password: import.meta.env.VITE_APP_API_KEY
     }
 });
 
