@@ -4,7 +4,7 @@ import axios from "axios";
     baseURL: 'https://api.github.com/',
     auth: {
         username: 'Layconnn',
-        password: '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'
+        password: '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'
     }
 });
 

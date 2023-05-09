@@ -24,13 +24,13 @@ function Home() {
       setCommits(response.data.items);
     }
     catch(err){
-      console.error(err)
+      console.log(err)
     }
   }
 
   useEffect(() => {
     handleSearchCommits();
-  }, [])
+  }, [commits])
 
   
 
@@ -53,7 +53,7 @@ function Home() {
           ?
         commits.map((data) => (
           
-            <CommitsButton className="initial-button" key={data.id} text={data.name} repo={data.full_name} />
+            <CommitsButton className="initial-button" key={data.id} text={data.owner.login} repo={data.full_name} />
           
         ))
         :
