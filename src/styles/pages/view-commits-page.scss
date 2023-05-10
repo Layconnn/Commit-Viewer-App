@@ -30,9 +30,8 @@ h3{
     font-family: Inter, sans-serif;
 }
 .profiles{
-    width: 160px;
-    text-align: center;
-    padding-left: 100px;
+    max-width: 200px;
+    padding: 0px;
 }
 .search-commit{
     padding-left: 40px;
@@ -53,9 +52,7 @@ h3{
     width: 1150px;
     padding: 30px 0; 
     border-radius: 20px;
-    border: 2px solid #29335C;
-    box-shadow: 20px 20px 10px grey;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 60px;
 }
@@ -63,28 +60,23 @@ h3{
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    margin: auto;
     margin-bottom: 10px;
 }
 h5{
     color: $myColor;
     font-size: 20px;
+    text-align: center;
 }
 h6{
     color: $myColor;
     font-size: 20px;
-    max-width: 900px;
-    padding-top: 30px;
-    padding-left: 150px;
+    max-width: 400px;
 }
 .date{
-    margin-left: 319px;
     color: $myColor;
     font-size: 20px;
-    padding-right: 50px;
 }
 .person-name{
     font-size: 22px;
     color: $myColor;
-    margin-top: 0;
 }

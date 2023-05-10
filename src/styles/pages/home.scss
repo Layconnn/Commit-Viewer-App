@@ -42,11 +42,44 @@ h5{
     background-color: #DFE4EA;
     margin-bottom: 24px;
 }
+.searched{
+    text-align: center;
+    font-size: 25px;
+    color: $myColor;
+    margin-bottom: 30px;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 200px;
+    padding: 0 30px;
+}
+.mapped-results{
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: row;
+    padding: 0 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 200px;
+}
+.section-name{
+    color: $myColor;
+    font-size: 20px;
+}
+.mapped-section{
+    border: 5px solid $myColor;
+    border-radius: 10px;
+    margin: 0 200px;
+}
 .mapped-btns{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 40px;
     align-items: center;
     gap: 1.5rem;
     
@@ -59,6 +92,7 @@ h5{
 .option{
     height: 20px;
     text-align: center;
+    margin-top: 40px;
     font-size: 14px;
     color: #3E4462;
     margin-bottom: 24px;

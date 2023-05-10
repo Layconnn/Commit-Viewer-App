@@ -7,16 +7,9 @@ import { useLocation } from 'react-router-dom'
 
 function ViewCommitsPage() {
   const [ commits, setCommits ] = useState([])
-  const [data, setData] = useState('')
-
-  const locate = useLocation();
-
-  useEffect(() => {
-    setData(locate.state.data)
-  },[])
 
   useEffect ( () =>{
-    Api.get(`https://api.github.com/search/commits?q=/${data.full_name}`)
+    Api.get(`https://api.github.com/search/commits?q=/${commits?.full_name}`)
       .then(response => {
         setCommits(response.data.items)
         console.log(response.data)
@@ -34,9 +27,12 @@ function ViewCommitsPage() {
               <SeeCommits text="See Commits🚀" />
             </div>
         </div>
-        <h3>{data?.name}</h3>
+        <h3>{commits?.commit?.author?.full_name}</h3>
         <div>
-            {commits.map((commit, key) => {
+          {
+            commits.length > 0
+           ?
+             commits.map((commit, key) => {
               return <>
                 <div className='update-container' key={key}>
                     <div className='profiles'>
@@ -47,8 +43,12 @@ function ViewCommitsPage() {
                     <p className='date'>{commit.commit.committer.date}</p>
                 </div>
                 </>
-            })}
+            })
+            :
+            ''
+          } 
         </div>
+      
     </>
   )
 }

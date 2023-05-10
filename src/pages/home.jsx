@@ -5,22 +5,36 @@ import CommitsButton from '../components/Buttons/commitsButton'
 import SeeCommits from '../components/Buttons/seeCommits';
 import Input from '../components/Inputs/input';
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function Home() {
   const [commits, setCommits] = useState([]);
   const [ repo, setRepo ] = useState('')
+  const [change, setChange] = useState([])
+  const [loading, setLoading] = useState(false)
   
   
   const handleChange = (e) => {
     setRepo(e.target.value)
   }
 
- 
+  const getCommits = async() => {
+    setLoading(true)
+    try{
+      const response = await Api.get('https://api.github.com/search/repositories?q=' + repo )
+      setChange(response.data.items)
+    }
+    catch(err){
+      console.log(err)
+    }
+    finally{
+      setLoading(false)
+    }
+  }
 
   const handleSearchCommits = async() => {
     try{
       const response = await Api.get('https://api.github.com/search/repositories?q=language:javaScript+sort:stars&per_page=4')
-      console.log(response.data)
       setCommits(response.data.items);
     }
     catch(err){
@@ -44,20 +58,41 @@ function Home() {
         </div>
         <div className='input-search'>
           <Input onChange={handleChange} className="search-commit" placeholder="Eg. facebook/react"/>
-          <SeeCommits text="See Commits🚀" repo={repo} />
+          <SeeCommits text="See Commits🚀" onClick={() => getCommits()} />
         </div>
+        { loading && <h5 className=''>Loading...</h5>  }
+        {/*<div className='mapped-section' >*/}
+        { !loading && change.length > 0
+        ?
+         <h5 className='searched'>Searched Results</h5>
+        :
+        ''
+        }
+        <div className='mapped-results'>
+        {
+            change.length > 0
+            ?
+            change.map((java) => (
+              
+              <>
+                  <CommitsButton className="initial-button" key={java?.id} text={java.name} repo={java.full_name} />
+              </>
+            ))  
+            :
+            '' 
+        }
+        </div>
+       {/* </div> */}
         <p className='option'>or pick one of the suggested repos</p>
         <span className='mapped-btns' >
         {
           commits.length > 0
           ?
-        commits.map((data) => (
-          
-            <CommitsButton className="initial-button" key={data.id} text={data.owner.login} repo={data.full_name} />
-          
-        ))
-        :
-        ''
+          commits.map((data) => (
+            <CommitsButton className="initial-button" key={data?.id} text={data?.full_name} repo={data?.full_name} />
+          ))
+          : 
+          ''
         }
         </span>
         
