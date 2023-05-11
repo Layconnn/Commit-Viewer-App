@@ -5,17 +5,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 210px;
-    height: 58px;
-    font-weight: 600px;
-    font-size: 20px;
-    border-radius: 8px;
+    width: 13.125rem;
+    height: 3.625rem;
+    font-weight: 37.5rem;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
     background-color: #F3663F;
     cursor: pointer;
     color: white;
-    @media (max-width: 460px){
-        width: 396px;
-        height: 58px;
-        margin: auto;
+    @media (max-width: 832px){
+        width: 27.45rem;
     }
 }

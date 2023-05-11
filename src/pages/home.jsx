@@ -50,14 +50,13 @@ function Home() {
 
   return (
     <>
-      <div className='body'>
         <HomeHeader />
         <div className='text'>
           <h1 className='first-text'>Discover the world of code</h1>
           <p className='second-text'>Explore open source projects from GitHub, and read their commit history to see the story of how they were built.</p>
         </div>
         <div className='input-search'>
-          <Input onChange={handleChange} className="search-commit" placeholder="Eg. facebook/react"/>
+          <Input onChange={handleChange} className="search-commits" placeholder="Eg. facebook/react"/>
           <SeeCommits text="See Commits🚀" onClick={() => getCommits()} />
         </div>
         { loading && <h5 className=''>Loading...</h5>  }
@@ -84,19 +83,17 @@ function Home() {
         </div>
        {/* </div> */}
         <p className='option'>or pick one of the suggested repos</p>
-        <span className='mapped-btns' >
+        <div className='mapped-btns' >
         {
           commits.length > 0
           ?
           commits.map((data) => (
-            <CommitsButton className="initial-button" key={data?.id} text={data?.full_name} repo={data?.full_name} />
+            <CommitsButton className="initial-button" key={data?.id} text={data.name} repo={data?.full_name} />
           ))
           : 
           ''
         }
-        </span>
-        
-      </div>
+        </div>
     </>
   )
 }

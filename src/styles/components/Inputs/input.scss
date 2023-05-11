@@ -1,24 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
-.first-input{
-    font-family: Inter, sans-serif;
-    width: 694px;
-    height: 58px;
-    font-size: 20px;
-    font-weight: 400;
-    border-radius: 8px;
-    background-color: white;
-    margin-bottom: 24px;
-    @media (max-width: 460px){
-    width: 396px;
-    height: 58px;
-    margin: auto;
-    margin-top: 20px;
-    }
-}
+
 .icon{
     position: absolute;
-    padding-top: 22px;
-    padding-left: 20px;
+    padding-top: 1.3rem;
+    padding-left: 1.25rem;
     color: #18214D;
 }

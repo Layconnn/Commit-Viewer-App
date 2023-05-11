@@ -1,85 +1,87 @@
 $myColor: #18214D;
 
 
-
 .first-text{
     color: $myColor;
     text-align: center;
     margin: auto;
-    margin-top: 24px;
-    margin-bottom: 16px;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     font-weight: 700;
-    font-size: 72px;
-    width: 540px;
-    height: 160px;
-    line-height: 80px;
+    font-size: 4.5rem;
+    width: 33.75rem;
+    height: 10rem;
+    line-height: 5rem;
 }
 
 .second-text{
-    width: 445px;
+    width: 27.8rem;
     text-align: center;
-    margin: auto auto 32px auto;
+    margin: auto auto 2rem auto;
     color: #3E4462;
-    font-size: 20px;
-    height: 88px;
-    line-height: 28px;
+    font-size: 1.25rem;
+    height: 5.5rem;
+    line-height: 1.75rem;
     font-weight: 400;
     font-style: normal;
 }
 h5{
     text-align: center;
 }
-.search-commit{
-    padding-left: 40px;
+.search-commits{
+    padding-left: 2.5rem;
     font-family: Inter, sans-serif;
-    width: 694px;
-    height: 58px;
+    width: 43.38rem;
+    height: 3.625rem;
     border: 1px solid #DFE4EA;
     outline: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background-color: #DFE4EA;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    @media (max-width: 832px){
+        width: 27.45rem;
+    }
 }
 .searched{
     text-align: center;
-    font-size: 25px;
+    font-size: 1.6rem;
     color: $myColor;
-    margin-bottom: 30px;
+    margin-bottom: 1.86rem;
 }
 .section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 200px;
-    padding: 0 30px;
+    margin: 1.86rem 12.5rem;
+    padding: 0 1.86rem;
 }
 .mapped-results{
     display: flex;
     gap: 2.5rem;
     flex-direction: row;
-    padding: 0 30px;
+    padding: 0 1.86rem;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 200px;
+    margin: 1.86rem 12.5rem;
 }
 .section-name{
     color: $myColor;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .mapped-section{
     border: 5px solid $myColor;
-    border-radius: 10px;
-    margin: 0 200px;
+    border-radius: 0.625rem;
+    margin: 0 12.5rem;
 }
 .mapped-btns{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     align-items: center;
     gap: 1.5rem;
     
@@ -88,14 +90,19 @@ h5{
     display: flex;
     gap: 1.5rem;
     justify-content: center;
+    @media (max-width: 832px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .option{
-    height: 20px;
+    height: 1.25rem;
     text-align: center;
-    margin-top: 40px;
-    font-size: 14px;
+    margin-top: 2.5rem;
+    font-size: 0.875rem;
     color: #3E4462;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .input-button{
@@ -107,67 +114,18 @@ h5{
 .buttons{
     display: flex;
     gap: 2rem;
-    margin-top: 32px;
+    margin-top: 2rem;
     justify-content: center;
 }
 
 .initial-button{
     cursor: pointer;
     font-family: Inter, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
     color: white;
     border: none;
     background-color: #29335C;
-    border-radius: 8px;
-    padding: 8px 16px;
-}
-
-@media (max-width: 460px){
-    .first-text{
-        margin: auto;
-        font-size: 56px;
-        margin-top: 32px;
-        width: 396px;
-        line-height: 62px;
-        font-weight: 600;
-    }
-    .second-text{
-        height: 84px;
-        width: 396px;
-    }
-    .input-button{
-        flex-direction: column;
-    }
-    .buttons{
-        flex-direction: column;
-        
-    }
-    .option{
-        margin-top: 20px;
-        margin: auto;
-        width: 180px;
-    }
-    .initial-button{
-        margin: auto;
-        padding: 0;
-    }
-    .second-button{
-        margin: auto;
-        padding: 0;
-    }
-    .third-button{
-        margin: auto;
-        padding: 0;
-    }
-    .fourth-button{
-        margin: auto;
-        padding: 0;
-    }
-    .search-input{
-    width: 396px;
-    height: 58px;
-    margin: auto;
-    margin-top: 20px;
-    }
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
 }

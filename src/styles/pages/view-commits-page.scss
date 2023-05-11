@@ -5,78 +5,120 @@ $myColor: #29335C;
 .commit-head{
     display: flex;
     justify-content: center;
-    align-items: centers;
+    align-items: center;
     gap: 4rem;
     background-color: #EFF2F6;
-    padding: 40px 145px 40px;
+    padding: 2.5rem 9.1rem 2.5rem;
+    @media (max-width: 1040px){
+    }
 }
 h2{
     color: $myColor;
-    font-size: 28px;
-    font-weight: 700px;
+    font-size: 1.75rem;
+    font-weight: 43.75rem;
     font-family: Inter, sans-serif;
 }
 .input-searching{
     display: flex;
     gap: 1.5rem;
+    @media (max-width: 1100px){
+        display: none;
+    }
 }
 h3{
-    font-size: 36px;
+    font-size: 2.25;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 3.125rem;
+    margin-top: 3.125rem;
     color: $myColor;
     font-family: Inter, sans-serif;
 }
 .profiles{
-    max-width: 200px;
-    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 1040px){
+       // flex-direction: row;
+       //  justify-items: center;
+       flex-direction: row;
+       gap: 1.5rem;
+       
+    }
 }
 .search-commit{
-    padding-left: 40px;
+    padding-left: 2.5rem;
     font-family: Inter, sans-serif;
-    width: 694px;
-    height: 58px;
+    width: 43.375rem;
+    height: 3.625rem;
     border: 1px solid #DFE4EA;
     outline: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background-color: #DFE4EA;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 .update-container{
     display: flex;
-    margin: auto;
-    width: 1150px;
-    padding: 30px 0; 
-    border-radius: 20px;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 60px;
+    margin: 0 12.5rem;
+    margin-bottom: 3.75rem;
+    @media (max-width: 1040px) {
+       // justify-content: space-around;
+       // padding-left: 4rem;
+    }
+}
+.checkout{
+    display: none;
 }
 .profile-container{
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     border-radius: 50%;
-    margin-bottom: 10px;
 }
-h5{
+.message{
     color: $myColor;
-    font-size: 20px;
-    text-align: center;
-}
-h6{
-    color: $myColor;
-    font-size: 20px;
-    max-width: 400px;
+    font-size: 1.25rem;
+    max-width: 25rem;
 }
 .date{
     color: $myColor;
-    font-size: 20px;
+    font-size: 1.25rem;
+    @media (max-width: 1040px){
+       // padding-top: 4rem;
+    }
 }
 .person-name{
-    font-size: 22px;
+    font-size: 1.375rem;
     color: $myColor;
+    text-align: center;
+    max-width: 4.1rem;
+    @media (max-width: 1040px){
+       // margin: auto;
+       max-width: unset;
+    }
+}
+@media (max-width: 1040px){
+    .message{
+        display: none;
+    }
+    .checkout{
+        display: block;
+        color: $myColor;
+        font-size: 1.25rem;
+        margin-left: 1.5rem;
+        max-width: 25rem;
+    }
+    .update-container{
+        justify-content: space-around;
+        margin-top: 2rem;
+        gap: 6.25rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .date{
+        padding-top: 1.5rem;
+    }
 }
