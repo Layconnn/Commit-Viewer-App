@@ -3,7 +3,8 @@ import Input from '../components/Inputs/input'
 import SeeCommits from '../components/Buttons/seeCommits'
 import Api from '../api/api'
 import { useLocation } from 'react-router-dom'
-
+import { format, parseISO } from 'date-fns';
+import dateFormat from 'dateformat'
 
 function ViewCommitsPage() {
   const [ commits, setCommits ] = useState([])
@@ -32,6 +33,8 @@ function ViewCommitsPage() {
     }
   }
 
+   
+  
 
   useEffect(() => {
     fetchApi();
@@ -58,13 +61,16 @@ function ViewCommitsPage() {
               return <>
               <h6 className='checkout'>{commit.commit.message}</h6>
                 <div className='update-container' key={key}>
-                  
                     <div className='profiles'>
                         <img src={commit?.author?.avatar_url} className='profile-container' />
                         <h5 className='person-name'>{commit.commit.author.name}</h5>
                     </div>
+                       
                     <h6 className='message'>{commit.commit.message}</h6>
-                    <p className='date'>{commit.commit.committer.date}</p>
+                    
+                    <h6 className='date'>{
+                    dateFormat(commit.commit.committer.date, 'UTC:hh:mm yyyy/MM/dd')
+                    }</h6>
                 </div>
                 </>
             })
