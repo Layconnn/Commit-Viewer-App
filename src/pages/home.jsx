@@ -74,7 +74,7 @@ function Home() {
             change.map((java) => (
               
               <>
-                  <CommitsButton className="initial-button" key={java?.id} text={java.name} repo={java.full_name} />
+                  <CommitsButton className="initial-button" key={java?.id} text={java.full_name} repo={java.full_name} />
               </>
             ))  
             :
